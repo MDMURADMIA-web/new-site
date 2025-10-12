@@ -1,0 +1,42 @@
+.step {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 15px;
+}
+.circle {
+  width: 80px;
+  height: 50px;
+  border-radius: 60%;
+  color: #bfbbbb;
+  background-color: rgb(19, 16, 227);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s ease-in-out, color 0.5s ease-in;
+}
+.label {
+  font-size: 15px;
+  display: inline-block;
+  padding: 16px 20px;
+  background: black;
+  color: #f1eaea;
+  border-top: 2px dashed rgb(221, 16, 149);
+  border-bottom: 2px dashed rgb(188, 26, 217);
+  border-left: 2px dashed rgb(216, 47, 242);
+  border-radius: 10px 0 0 10px;
+  transition: background 1s ease-in, color 0.5s ease-in, border 0.8s ease-in;
+}
+
+.step:hover .circle {
+  background: green;
+  color: #fff;
+}
+
+.step:hover .label {
+  background: green;
+  color: #fff;
+  border: none;
+}
